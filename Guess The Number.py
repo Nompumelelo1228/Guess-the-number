@@ -1,10 +1,13 @@
 # own twist
 import random
 
+# the players guesses at the start of the game
 player_guesses = 0
 
+# getting random numbers from 1 to 10
 number = random.randint(1, 10)
 
+# ignore for now
 """ while True:
     player_name = input('What is your player_name? ')
     print(f'Hello {player_name}, would you like to play a game? ')
@@ -15,11 +18,13 @@ number = random.randint(1, 10)
         print('Okay')
         exit() """
 
+# getting player name using the input function
 player_name = input('What is your player_name? ')
 
-play_game = input(
-    f'Hello {player_name}, would you like to play a game? (yes/no): ')
 
+play_game = input(f'Hello {player_name}, would you like to play a game? (yes/no): ')
+
+# getting player response if yes the game continues, if no then the game exits with a message
 match play_game:
     case 'yes' | 'Yes' | 'YES' | 'y' | 'Y':
         print(f'Well {player_name}, I am thinking of a number between 1 and 10')
@@ -29,6 +34,7 @@ match play_game:
     # case _:
     #     print('yes or no')
 
+# player only has 7 guesses
 for player_guesses in range(7):
     guess = int(input('Take a guess: '))
 
