@@ -50,6 +50,3 @@ if guess == number:
 
 if guess != number:
     print(f'Unforunately {player_name}, you weren\'t able to guess the number. The number that I was thinking of was {number}.')
-
-
-#test
