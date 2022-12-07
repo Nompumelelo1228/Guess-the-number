@@ -26,9 +26,9 @@ play_game = input(f"Hello {player_name}, would you like to play a game? (yes/no)
 
 # getting player response if yes the game continues, if no then the game exits with a message
 match play_game:
-    case ["yes" | "Yes" | "YES" | "y" | "Y"]:
+    case "yes" | "Yes" | "YES" | "y" | "Y":
         print(f"Well {player_name}, I am thinking of a number between 1 and 10")
-    case ["no" | "No" | "NO" | "n" | "N"]:
+    case "no" | "No" | "NO" | "n" | "N":
         print("Okay.")
         exit()
     case _:
