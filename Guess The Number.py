@@ -44,12 +44,9 @@ for player_guesses in range(7):
 if guess == number:
     player_guesses += 1
     if player_guesses == 1:
-        print(
-            f'Congratulations {player_name}. You guessed the number in {player_guesses} guess.')
+        print(f'Congratulations {player_name}. You guessed the number in {player_guesses} guess.')
     else:
-        print(
-            f'Congratulations {player_name}. You guessed the number in {player_guesses} guesses.')
+        print(f'Congratulations {player_name}. You guessed the number in {player_guesses} guesses.')
 
 if guess != number:
-    print(
-        f'Unforunately {player_name}, you weren\'t able to guess the number. The number that I was thinking of was {number}.')
+    print(f'Unforunately {player_name}, you weren\'t able to guess the number. The number that I was thinking of was {number}.')
