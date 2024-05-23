@@ -7,17 +7,6 @@ player_guesses = 0
 # getting random numbers from 1 to 10
 number = random.randint(1, 10)
 
-# ignore for now
-""" while True:
-    player_name = input('What is your player_name? ')
-    print(f'Hello {player_name}, would you like to play a game? ')
-    play_game = input()
-    if play_game == 'yes':
-        break
-    else:
-        print('Okay')
-        exit() """
-
 # getting player name using the input function
 player_name = input("What is your player_name? ")
 
